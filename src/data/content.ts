@@ -100,43 +100,44 @@ export const SITE_CONTENT = {
     },
 
     supportSection: {
-    id: "support",
-    title: {
-        regular: "WESPRZYJ",
-        highlight: "PROJEKT",
-    },
-    subtitle: {
-        prefix: "Książka jest i pozostanie",
-        highlight: "dostępna bezpłatnie.",
-    },
-    description:
-        "Jeśli uznasz, że „Zaprogramuj swoją ewolucję” dała Ci wartość i chcesz wesprzeć rozwój projektu, możesz postawić mi symboliczną kawę.",
-    buttonText: "POSTAW MI KAWĘ",
-    buttonUrl: "#", // update later!
-    note: "Wsparcie jest całkowicie dobrowolne i nie wpływa na dostęp do książki.",
-    imageSrc: "/images/virtual_coffee.webp",
-    imageAlt: "Symboliczna wirtualna kawa",
+        id: "support",
+        title: {
+            regular: "WESPRZYJ",
+            highlight: "PROJEKT",
+        },
+        subtitle: {
+            prefix: "Książka jest i pozostanie",
+            highlight: "dostępna bezpłatnie.",
+        },
+        description:
+            "Jeśli uznasz, że „Zaprogramuj swoją ewolucję” dała Ci wartość i chcesz wesprzeć rozwój projektu, możesz postawić mi symboliczną kawę.",
+        buttonText: "POSTAW MI KAWĘ",
+        buttonUrl: "#", // update later!
+        note: "Wsparcie jest całkowicie dobrowolne i nie wpływa na dostęp do książki.",
+        imageSrc: "/images/virtual_coffee.webp",
+        imageAlt: "Symboliczna wirtualna kawa",
     },
 
-  finalCta: {
-    quote: {
-        text: "Nie chodzi o stworzenie idealnej wersji siebie według wcześniej przygotowanego planu.",
-        highlight: "Chodzi o świadome uczestnictwo w procesie własnej zmiany.",
-    },
-    title: {
-        regular: "TWOJA EWOLUCJA",
-        highlight: "JUŻ TRWA.",
-    },
-    subtitle: "Zaprogramuj ją świadomie.",
-    cta: {
-        buttonText: "POBIERZ DARMOWĄ KSIĄŻKĘ (PDF)",
-        fileBadge: "PDF · bezpłatnie · bez rejestracji",
-        fileUrl: "/Zaprogramuj swoją ewolucję - Igor Kiełbowski.pdf",
-    },
-    backgroundImage: {
-        src: "/images/quote_bg.webp",
-        alt: "Panorama futurystycznego miasta o zachodzie słońca",
-    },
+    finalCta: {
+        quote: {
+            text: "Nie chodzi o stworzenie idealnej wersji siebie według wcześniej przygotowanego planu.",
+            highlight: "Chodzi o świadome uczestnictwo w procesie własnej zmiany.",
+        },
+        title: {
+            regular: "TWOJA EWOLUCJA",
+            highlight: "JUŻ TRWA.",
+        },
+        subtitle: "Zaprogramuj ją świadomie.",
+        cta: {
+            buttonText: "POBIERZ DARMOWĄ KSIĄŻKĘ (PDF)",
+            fileBadge: "PDF · bezpłatnie · bez rejestracji",
+            fileUrl: "#", // Update later! 
+            // "/Zaprogramuj swoją ewolucję - Igor Kiełbowski.pdf",
+        },
+        backgroundImage: {
+            src: "/images/quote_bg.webp",
+            alt: "Panorama futurystycznego miasta o zachodzie słońca",
+        },
     },
 
     footer: {

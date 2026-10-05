@@ -35,9 +35,13 @@ export const SITE_CONTENT = {
       supportNote: "Książka jest darmowa. Jeśli zechcesz wesprzeć projekt",
       supportLinkText: "→ Postaw mi kawę.",
     },
+    backgroundImage: {
+        src: "/images/hero_bg.webp",
+        alt: "",
+    },
     bookCover: {
       alt: "Okładka książki Zaprogramuj Swoją Ewolucję - Igor Kiełbowski",
-      src: "/images/book-cover.png",
+      src: "/images/hero_book.webp",
     },
   },
 

@@ -7,10 +7,10 @@ export const SITE_CONTENT = {
       second: "EWOLUCJĘ",
     },
     links: [
-      { label: "KSIĄŻKA", href: "#ksiazka" },
+      { label: "KSIĄŻKA", href: "#book" },
       { label: "IDEA", href: "#idea" },
-      { label: "O AUTORZE", href: "#o-autorze" },
-      { label: "WSPARCIE", href: "#wsparcie" },
+      { label: "O AUTORZE", href: "#author" },
+      { label: "WSPARCIE", href: "#support" },
     ],
     ctaButton: "POBIERZ ZA DARMO",
   },
@@ -47,7 +47,10 @@ export const SITE_CONTENT = {
 
   pillarsSection: {
     id: "idea",
-    title: "CZŁOWIEK JAKO SYSTEM",
+    title: {
+        regular: "CZŁOWIEK JAKO",
+        highlight: "SYSTEM",
+    },
     subtitle:
       "Ciało, psychika i środowisko tworzą jeden, nierozerwalny system. Zrozum każdy z jego elementów.",
     items: [
@@ -56,7 +59,7 @@ export const SITE_CONTENT = {
         title: "CIAŁO",
         description:
           "Organizm jako system — homeostaza, adaptacja, metabolizm, układ nerwowy, mózg, hormony, mięśnie i regeneracja.",
-        imageSrc: "/images/pillar-cialo.png",
+        imageSrc: "/images/tiles_body.webp",
         imageAlt: "Układ biologiczny i mięśniowy człowieka",
       },
       {
@@ -64,7 +67,7 @@ export const SITE_CONTENT = {
         title: "PSYCHIKA",
         description:
           "Interpretacja rzeczywistości — emocje, doświadczenia, automatyczne reakcje, myślenie, przekonania, tożsamość i świadomość.",
-        imageSrc: "/images/pillar-psychika.png",
+        imageSrc: "/images/tiles_psyche.webp",
         imageAlt: "Struktura mózgu i procesy myślowe",
       },
       {
@@ -72,7 +75,7 @@ export const SITE_CONTENT = {
         title: "INTEGRACJA",
         description:
           "Jeden człowiek. Jeden system. Sprzężenie zwrotne, punkty wpływu, adaptacja i świadomy rozwój.",
-        imageSrc: "/images/pillar-integracja.png",
+        imageSrc: "/images/tiles_integration.webp",
         imageAlt: "Zintegrowana sylwetka człowieka z punktami węzłowymi",
       },
     ],

@@ -8,7 +8,7 @@ export function Hero() {
   const { hero, supportSection, finalCta } = SITE_CONTENT;
 
   return (
-    <section id="ksiazka" className="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+    <section id="book" className="relative pt-12 pb-10 md:pt-20 md:pb-12 overflow-hidden">
       <div className="absolute inset-0 z-[1] select-none pointer-events-none">
         <Image
           src={hero.backgroundImage.src}

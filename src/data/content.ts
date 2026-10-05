@@ -120,20 +120,24 @@ export const SITE_CONTENT = {
 
   finalCta: {
     quote: {
-      lead: "Nie chodzi o stworzenie idealnej wersji siebie według wcześniej przygotowanego planu.",
-      highlight:
-        "Chodzi o świadome uczestnictwo w procesie własnej zmiany.",
+        text: "Nie chodzi o stworzenie idealnej wersji siebie według wcześniej przygotowanego planu.",
+        highlight: "Chodzi o świadome uczestnictwo w procesie własnej zmiany.",
     },
-    headline: {
-      primary: "TWOJA EWOLUCJA JUŻ TRWA.",
-      secondary: "Zaprogramuj ją świadomie.",
+    title: {
+        regular: "TWOJA EWOLUCJA",
+        highlight: "JUŻ TRWA.",
     },
+    subtitle: "Zaprogramuj ją świadomie.",
     cta: {
-      buttonText: "POBIERZ DARMOWĄ KSIĄŻKĘ (PDF)",
-      fileBadge: "PDF • bezpłatnie • bez rejestracji",
-      fileUrl: "/Zaprogramuj_swoja_ewolucje.pdf",
+        buttonText: "POBIERZ DARMOWĄ KSIĄŻKĘ (PDF)",
+        fileBadge: "PDF · bezpłatnie · bez rejestracji",
+        fileUrl: "/Zaprogramuj swoją ewolucję - Igor Kiełbowski.pdf",
     },
-  },
+    backgroundImage: {
+        src: "/images/quote_bg.webp",
+        alt: "Panorama futurystycznego miasta o zachodzie słońca",
+    },
+    },
 
   footer: {
     brand: "ZAPROGRAMUJ SWOJĄ EWOLUCJĘ",

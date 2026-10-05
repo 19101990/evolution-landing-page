@@ -99,20 +99,24 @@ export const SITE_CONTENT = {
     },
     },
 
-  supportSection: {
-    id: "wsparcie",
+    supportSection: {
+    id: "support",
     title: {
-      regular: "WESPRZYJ",
-      highlight: "PROJEKT",
+        regular: "WESPRZYJ",
+        highlight: "PROJEKT",
     },
-    highlightedText: "Książka jest i pozostanie dostępna bezpłatnie.",
+    subtitle: {
+        prefix: "Książka jest i pozostanie",
+        highlight: "dostępna bezpłatnie.",
+    },
     description:
-      "Jeśli uznasz, że „Zaprogramuj swoją ewolucję” dała Ci wartość i chcesz wesprzeć rozwój projektu, możesz postawić mi symboliczną kawę.",
+        "Jeśli uznasz, że „Zaprogramuj swoją ewolucję” dała Ci wartość i chcesz wesprzeć rozwój projektu, możesz postawić mi symboliczną kawę.",
     buttonText: "POSTAW MI KAWĘ",
-    buttonUrl: "https://buycoffee.to/igorek",
-    footnote:
-      "Wsparcie jest całkowicie dobrowolne i nie wpływa na dostęp do książki.",
-  },
+    buttonUrl: "#", // update later!
+    note: "Wsparcie jest całkowicie dobrowolne i nie wpływa na dostęp do książki.",
+    imageSrc: "/images/virtual_coffee.webp",
+    imageAlt: "Symboliczna wirtualna kawa",
+    },
 
   finalCta: {
     quote: {

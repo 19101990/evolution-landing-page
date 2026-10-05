@@ -4,6 +4,7 @@ import { SystemPillars } from "@/components/sections/SystemPillars";
 import { AuthorBio } from "@/components/sections/AuthorBio";
 import { SupportSection } from "@/components/sections/SupportSection";
 import { FinalCta } from "@/components/sections/FinalCta";
+import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AuthorBio />
       <SupportSection />
       <FinalCta />
+      <Footer />
     </main>
   );
 }

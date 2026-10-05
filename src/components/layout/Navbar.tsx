@@ -35,7 +35,7 @@ export function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Button href="/Zaprogramuj_swoja_ewolucje.pdf" className="px-5 py-2.5">
+          <Button href="/Zaprogramuj swoją ewolucję - Igor Kiełbowski.pdf" className="px-5 py-2.5">
             {ctaButton}
           </Button>
         </div>
@@ -67,7 +67,7 @@ export function Navbar() {
           </nav>
           <div className="pt-2">
             <Button
-              href="/Zaprogramuj_swoja_ewolucje.pdf"
+              href="/Zaprogramuj swoją ewolucję - Igor Kiełbowski.pdf"
               className="w-full py-3"
             >
               {ctaButton}

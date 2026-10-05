@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { SystemPillars } from "@/components/sections/SystemPillars";
+import { AuthorBio } from "@/components/sections/AuthorBio";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <SystemPillars />
+      <AuthorBio />
     </main>
   );
 }

@@ -82,22 +82,22 @@ export const SITE_CONTENT = {
   },
 
   authorSection: {
-    id: "o-autorze",
+    id: "author",
     eyebrow: "O AUTORZE",
     name: {
-      first: "IGOR",
-      last: "KIEŁBOWSKI",
+        first: "IGOR",
+        last: "KIEŁBOWSKI",
     },
     bio: [
-      "Łączę wiedzę z zakresu fizjoterapii, treningu, automatyki i robotyki z osobistymi doświadczeniami, aby lepiej rozumieć, jak funkcjonuje człowiek jako system.",
-      "Zmiana sylwetki, sport, studia, praca z ludźmi i własne doświadczenia pokazały mi, że ciało, psychika i środowisko nie działają oddzielnie. Automatyka i robotyka nauczyły mnie patrzeć na rzeczywistość przez pryzmat systemów i sprzężeń zwrotnych, a fizjoterapia dodała perspektywę biologii organizmu.",
-      "„Zaprogramuj swoją ewolucję” to efekt połączenia tych perspektyw – próba stworzenia narzędzia, które ma pomagać w świadomym rozwoju, a nie gotowej recepty na wszystko.",
+        "Łączę wiedzę z zakresu fizjoterapii, treningu, automatyki i robotyki z osobistymi doświadczeniami, aby lepiej rozumieć, jak funkcjonuje człowiek jako system.",
+        "Zmiana sylwetki, sport, studia, praca z ludźmi i własne doświadczenia pokazały mi, że ciało, psychika i środowisko nie działają oddzielnie. Automatyka i robotyka nauczyły mnie patrzeć na rzeczywistość przez pryzmat systemów i sprzężeń zwrotnych, a fizjoterapia dodała perspektywę biologii organizmu.",
+        "„Zaprogramuj swoją ewolucję” to efekt połączenia tych perspektyw – próba stworzenia narzędzia, które ma pomagać w świadomym rozwoju, a nie gotowej recepty na wszystko.",
     ],
     photo: {
-      src: "/images/igor-kielbowski.png",
-      alt: "Igor Kiełbowski",
+        src: "/images/about_author.webp",
+        alt: "Igor Kiełbowski",
     },
-  },
+    },
 
   supportSection: {
     id: "wsparcie",

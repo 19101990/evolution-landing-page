@@ -139,15 +139,66 @@ export const SITE_CONTENT = {
     },
     },
 
-  footer: {
-    brand: "ZAPROGRAMUJ SWOJĄ EWOLUCJĘ",
-    author: "Igor Kiełbowski",
-    copyright: "© 2026 Igor Kiełbowski",
-    links: [
-      { label: "Kontakt", href: "mailto:kontakt@zaprogramujswojaewolucje.pl" },
-      { label: "Polityka prywatności", href: "/polityka-prywatnosci" },
-    ],
-  },
+    footer: {
+        brand: {
+            title: "ZAPROGRAMUJ SWOJĄ",
+            highlight: "EWOLUCJĘ",
+            author: "Igor Kiełbowski",
+        },
+        copyright: "© 2026 Igor Kiełbowski",
+        links: [
+            { label: "Kontakt", href: "#" }, // Update later!
+            { label: "Polityka prywatności", href: "#" },
+        ],
+    },
+
+    privacyPolicy: {
+        title: "POLITYKA PRYWATNOŚCI",
+        lastUpdated: "Ostatnia aktualizacja: październik 2026",
+        sections: [
+            {
+            heading: "1. Informacje ogólne",
+            content:
+                "Niniejsza strona ma charakter informacyjny i promuje bezpłatną publikację „Zaprogramuj swoją ewolucję”. Pobieranie materiałów odbywa się bezpośrednio, bez konieczności rejestracji i bez podawania jakichkolwiek danych osobowych.",
+            },
+            {
+            heading: "2. Logi serwera i hosting",
+            content:
+                "Serwis utrzymywany jest na platformie hostingowej Vercel. Podczas korzystania ze strony zapytania sieciowe mogą być rejestrowane w standardowych logach technicznych serwera (np. adres IP, data i godzina zapytania, typ przeglądarki). Dane te służą wyłącznie celom technicznym i bezpieczeństwa.",
+            },
+            {
+            heading: "3. Pliki cookies i analityka",
+            content:
+                "Strona nie wykorzystuje inwazyjnych marketingowych plików cookies ani narzędzi śledzących profile użytkowników. Wykorzystywane mogą być jedynie niezbędne mechanizmy sesyjne lub zagregowane, anonimowe statystyki ruchu.",
+            },
+            {
+            heading: "4. Zewnętrzne odnośniki",
+            content:
+                "Odnośniki zewnętrzne (np. link do postawienia kawy lub profile społecznościowe) kierują do niezależnych platform, które posiadają własne polityki prywatności i przetwarzania danych.",
+            },
+        ],
+    },
+    contactModal: {
+        title: {
+            regular: "SKONTAKTUJ",
+            highlight: "SIĘ",
+        },
+        intro:
+            "Masz pytania dotyczące treści książki, chcesz podzielić się swoimi wnioskami po lekturze albo przedyskutować praktyczne wdrożenie zasad w życiu? A może myślisz o współpracy, warsztatach lub prelekcji? Napisz śmiało – każda merytoryczna perspektywa ma dla mnie ogromną wartość.",
+        email: "igorkielbowski@gmail.com",
+        socials: {
+            instagram: {
+                name: "Instagram",
+                url: "https://www.instagram.com/igi.kielbosky?stkn=MWJjbTZsbHFxcnRweA%3D%3D&utm_source=qr",
+                handle: "@igi.kielbosky",
+            },
+            facebook: {
+                name: "Facebook",
+                url: "https://www.facebook.com/share/1FLmphLott/?mibextid=wwXIfr",
+                handle: "Igor Kiełbowski",
+            },
+        },
+    },
 } as const;
 
 export type SiteContent = typeof SITE_CONTENT;

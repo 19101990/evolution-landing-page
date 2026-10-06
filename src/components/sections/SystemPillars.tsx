@@ -13,7 +13,7 @@ export function SystemPillars() {
       <Container className="relative z-10">
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-8 md:mb-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-2 font-display">
             {pillarsSection.title.regular}{" "}
             <span className="text-cyan-400 drop-shadow-[0_0_20px_rgba(34,211,238,0.35)]">
               {pillarsSection.title.highlight}
@@ -55,7 +55,7 @@ export function SystemPillars() {
                     : "pl-24 sm:pl-28 lg:pl-32"
                 } flex flex-col justify-center`}
                 >
-                <h3 className="font-extrabold text-base lg:text-lg uppercase tracking-wider text-cyan-400 mb-1.5 drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]">
+                <h3 className="font-extrabold text-base lg:text-lg uppercase tracking-wider text-cyan-400 mb-1.5 drop-shadow-[0_0_10px_rgba(34,211,238,0.3)] font-display">
                     {pillar.title}
                 </h3>
                 <p className="text-xs lg:text-[13px] text-slate-300 leading-relaxed">

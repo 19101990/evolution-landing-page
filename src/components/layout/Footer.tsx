@@ -19,7 +19,7 @@ export function Footer() {
             
             {/* Left: Brand & Author */}
             <div className="flex flex-col items-center sm:items-start gap-1">
-              <span className="font-mono text-xs font-black tracking-wider text-white select-none">
+              <span className="font-mono text-sm font-black tracking-wider text-white select-none font-display">
                 {footer.brand.title}{" "}
                 <span className="text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.4)]">
                   {footer.brand.highlight}

@@ -50,7 +50,7 @@ export function AuthorBio() {
             </span>
 
             {/* Name */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-6 font-display">
               {authorSection.name.first}{" "}
               <span className="text-[#FF6B00] drop-shadow-[0_0_20px_rgba(255,107,0,0.3)]">
                 {authorSection.name.last}

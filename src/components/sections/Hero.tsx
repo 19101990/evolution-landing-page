@@ -43,7 +43,7 @@ export function Hero() {
             </span>
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[1.05] text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight leading-[1.05] text-white mb-6 font-display">
               {hero.title.line1} <br />
               {hero.title.line2}{" "}
               <span className="text-[#FF6B00] drop-shadow-[0_0_25px_rgba(255,107,0,0.35)]">

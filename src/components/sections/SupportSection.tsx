@@ -36,7 +36,7 @@ export function SupportSection() {
 
             {/* Section Headline & Description */}
             <div className="flex-1 min-w-0">
-              <h2 className="font-mono text-xl sm:text-2xl font-black uppercase tracking-tight text-white mb-1.5">
+              <h2 className="font-mono text-xl sm:text-2xl font-black uppercase tracking-tight text-white mb-1.5 font-display">
                 {supportSection.title.regular}{" "}
                 <span className="text-cyan-400 drop-shadow-[0_0_20px_rgba(34,211,238,0.35)]">
                   {supportSection.title.highlight}

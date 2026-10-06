@@ -53,7 +53,7 @@ export function FinalCta() {
 
           {/* Right Column: CTA Block */}
           <div className="lg:col-span-6 flex flex-col items-center text-center lg:pt-16">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight mb-1">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight mb-1 font-display">
               <span className="text-cyan-400 drop-shadow-[0_0_20px_rgba(34,211,238,0.45)]">
                 {finalCta.title.regular}{" "}
               </span>

@@ -17,7 +17,7 @@ export function Navbar() {
         {/* Brand Logo */}
         <a href="#" className="font-extrabold text-sm sm:text-base tracking-wider uppercase leading-tight">
           <span className="text-slate-100">{logo.first}</span>{" "}
-          <span className="text-cyan-400">{logo.second}</span>
+          <span className="block text-cyan-400">{logo.second}</span>
         </a>
 
         {/* Desktop Anchor Links */}

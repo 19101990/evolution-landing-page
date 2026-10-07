@@ -58,8 +58,14 @@ export function SupportSection() {
             </Reveal>
           </div>
 
-          <div className="lg:col-span-4 flex flex-col items-start lg:items-end justify-center pl-20 sm:pl-24 lg:pl-0">
-            <Reveal direction="left" delay={0.15} duration={1.4} margin="0px 0px -70px 0px">
+          <div className="lg:col-span-4 flex justify-start lg:justify-end pl-20 sm:pl-24 lg:pl-0">
+            <Reveal
+              direction="left"
+              delay={0.15}
+              duration={1.4}
+              margin="0px 0px -70px 0px"
+              className="flex flex-col items-start lg:items-end w-full"
+            >
               <a
                 href={supportSection.buttonUrl}
                 target="_blank"

@@ -24,7 +24,7 @@ export function SystemPillars() {
             margin="0px 0px -180px 0px"
             delay={0}
           >
-            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-2">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-tight text-white mb-2">
               {pillarsSection.title.regular}{" "}
               <span className="text-cyan-400 drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
                 {pillarsSection.title.highlight}

@@ -9,7 +9,7 @@ export function Hero() {
   const { hero, supportSection, finalCta } = SITE_CONTENT;
 
   return (
-    <section id="book" className="relative pt-12 pb-10 md:pt-20 md:pb-12 overflow-hidden">
+    <section id="book" className="relative pt-10 pb-10 md:pt-20 md:pb-12 overflow-hidden">
       <div className="absolute inset-0 z-[1] select-none pointer-events-none">
         <Image
           src={hero.backgroundImage.src}
@@ -33,7 +33,7 @@ export function Hero() {
       />
 
       <Container className="relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
           <div className="lg:col-span-7 flex flex-col items-start text-left order-2 lg:order-1">
             
@@ -44,7 +44,7 @@ export function Hero() {
             </Reveal>
 
             <Reveal direction="up" delay={0.15} duration={1.4}>
-              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[1.05] text-white mb-6">
+              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight leading-[1.05] text-white mb-6">
                 {hero.title.line1} <br />
                 {hero.title.line2}{" "}
                 <span className="text-[#FF6B00] drop-shadow-[0_0_25px_rgba(255,107,0,0.35)]">
@@ -74,7 +74,7 @@ export function Hero() {
                 <Button
                   href={finalCta.cta.fileUrl}
                   download
-                  className="w-full sm:w-auto px-7 py-4 text-xs sm:text-sm font-extrabold tracking-wider shadow-lg shadow-[#FF6B00]/20 hover:shadow-[#FF6B00]/40 transition-shadow duration-300"
+                  className="w-full sm:w-auto px-4 py-4 text-xs sm:text-sm font-bold font-display tracking-wider shadow-lg shadow-[#FF6B00]/20 hover:shadow-[#FF6B00]/40 transition-shadow duration-300"
                 >
                   <Download className="w-4 h-4 mr-1 stroke-[2.5]" />
                   {hero.cta.buttonText}
@@ -99,13 +99,13 @@ export function Hero() {
             </Reveal>
           </div>
 
-          <div className="lg:col-span-5 flex justify-center items-center relative order-1 lg:order-2">
-            <Reveal direction="left" delay={0.2} duration={1.9} className="w-full flex justify-center">
-              <div className="relative w-full max-w-[340px] sm:max-w-[420px] lg:max-w-none flex items-center justify-center">
+          <div className="lg:col-span-5 flex justify-center items-center relative order-1 lg:order-2 w-full">
+            <Reveal direction="up" delay={0.2} duration={1.4} className="w-full flex justify-center">
+              <div className="relative w-full max-w-[220px] sm:max-w-[340px] lg:max-w-none flex items-center justify-center mx-auto">
                 
                 <div
                   aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 via-[#FF6B00]/15 to-transparent rounded-2xl filter blur-3xl opacity-75"
+                  className="absolute inset-0 bg-gradient-to-tr from-cyan-500/25 via-[#FF6B00]/20 to-transparent rounded-2xl filter blur-2xl sm:blur-3xl opacity-80"
                 />
 
                 <Image
@@ -114,8 +114,8 @@ export function Hero() {
                   width={520}
                   height={720}
                   priority
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
-                  className="relative z-10 w-auto h-auto max-h-[580px] object-contain drop-shadow-[0_20px_45px_rgba(0,0,0,0.85)] select-none pointer-events-none"
+                  sizes="(max-width: 640px) 220px, (max-width: 1024px) 340px, 40vw"
+                  className="relative z-10 w-auto h-auto max-h-[300px] sm:max-h-[440px] lg:max-h-[580px] object-contain drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] select-none pointer-events-none"
                 />
               </div>
             </Reveal>

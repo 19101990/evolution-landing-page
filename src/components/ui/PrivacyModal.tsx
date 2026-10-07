@@ -49,7 +49,7 @@ export function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
           <div>
             <h2
               id="privacy-modal-title"
-              className="font-mono text-base sm:text-lg font-black uppercase tracking-wider text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.35)]"
+              className="font-mono text-base sm:text-lg font-bold font-display uppercase tracking-wider text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.35)]"
             >
               {privacyPolicy.title}
             </h2>

@@ -64,7 +64,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
         <div className="relative flex items-center justify-between px-6 sm:px-8 py-5 border-b border-slate-800/80">
           <h2
             id="contact-modal-title"
-            className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white"
+            className="text-2xl sm:text-3xl font-bold font-display uppercase tracking-tight text-white"
           >
             {contactModal.title.regular}{" "}
             <span className="text-cyan-400 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)]">

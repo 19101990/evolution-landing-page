@@ -10,7 +10,7 @@ export function Hero() {
   const { hero, supportSection, finalCta } = SITE_CONTENT;
 
   return (
-    <section id="book" className="relative pt-10 pb-10 md:pt-20 md:pb-12 overflow-hidden">
+    <section id="book" className="relative pt-10 pb-10 md:pt-20 md:pb-12 overflow-hidden bg-[#050A10]">
       <div className="absolute inset-0 z-[1] select-none pointer-events-none">
         <Image
           src={hero.backgroundImage.src}
@@ -18,7 +18,7 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-top opacity-35"
+          className="object-cover object-bottom sm:object-top !top-auto !bottom-0 !h-[60%] sm:!top-0 sm:!h-full opacity-80 sm:opacity-35"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#050A10]/40 via-transparent to-[#050A10]" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#050A10] via-[#050A10]/70 to-transparent" />
@@ -64,7 +64,7 @@ export function Hero() {
             </Reveal>
 
             <Reveal direction="up" delay={0.35} duration={1.4}>
-              <p className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl mb-8 font-sans">
+              <p className="text-white text-sm sm:text-base leading-relaxed max-w-xl mb-8 font-sans">
                 {hero.description}
               </p>
             </Reveal>

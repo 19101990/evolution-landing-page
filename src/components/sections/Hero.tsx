@@ -4,6 +4,7 @@ import { SITE_CONTENT } from "@/data/content";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
+import { HeroBookCover } from "@/components/ui/HeroBookCover";
 
 export function Hero() {
   const { hero, supportSection, finalCta } = SITE_CONTENT;
@@ -36,7 +37,6 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
           <div className="lg:col-span-7 flex flex-col items-start text-left order-2 lg:order-1">
-            
             <Reveal direction="up" delay={0.05} duration={1.4}>
               <span className="font-mono text-xs uppercase tracking-widest text-cyan-400 font-semibold mb-3 block">
                 {hero.authorEyebrow}
@@ -101,23 +101,10 @@ export function Hero() {
 
           <div className="lg:col-span-5 flex justify-center items-center relative order-1 lg:order-2 w-full">
             <Reveal direction="up" delay={0.2} duration={1.4} className="w-full flex justify-center">
-              <div className="relative w-full max-w-[220px] sm:max-w-[340px] lg:max-w-none flex items-center justify-center mx-auto">
-                
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-tr from-cyan-500/25 via-[#FF6B00]/20 to-transparent rounded-2xl filter blur-2xl sm:blur-3xl opacity-80"
-                />
-
-                <Image
-                  src={hero.bookCover.src}
-                  alt={hero.bookCover.alt}
-                  width={520}
-                  height={720}
-                  priority
-                  sizes="(max-width: 640px) 220px, (max-width: 1024px) 340px, 40vw"
-                  className="relative z-10 w-auto h-auto max-h-[300px] sm:max-h-[440px] lg:max-h-[580px] object-contain drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] select-none pointer-events-none"
-                />
-              </div>
+              <HeroBookCover
+                src={hero.bookCover.src}
+                alt={hero.bookCover.alt}
+              />
             </Reveal>
           </div>
 

@@ -10,7 +10,7 @@ export function SystemPillars() {
   return (
     <section
       id={pillarsSection.id}
-      className="relative py-12 md:py-16 bg-[#050A10] overflow-hidden"
+      className="relative pt-12 md:pt-16 pb-5 bg-[#050A10] overflow-hidden"
     >
       <div
         aria-hidden="true"
@@ -55,11 +55,9 @@ export function SystemPillars() {
                 className="h-full"
               >
                 <div className="relative h-full rounded-2xl p-[1px] overflow-hidden bg-slate-800/60 shadow-lg">
-                  
                   <BorderBeam index={index} duration={3} totalCards={3} />
 
                   <article className="relative z-10 w-full h-full rounded-[15px] bg-[#04080E] p-5 sm:p-6 min-h-[170px] flex flex-col justify-center overflow-hidden">
-                    
                     <div
                       className={`absolute inset-y-0 ${
                         isShifted ? "-left-[50px]" : "left-0"
@@ -75,10 +73,10 @@ export function SystemPillars() {
                     </div>
 
                     <div
-                      className={`relative z-10 ${
+                      className={`relative z-10 pl-24 ${
                         isShifted
-                          ? "pl-20 sm:pl-24 lg:pl-28"
-                          : "pl-24 sm:pl-28 lg:pl-32"
+                          ? "sm:pl-24 lg:pl-28"
+                          : "sm:pl-28 lg:pl-32"
                       } flex flex-col justify-center`}
                     >
                       <h3 className="font-display font-extrabold text-base lg:text-lg uppercase tracking-wider text-cyan-400 mb-1.5 drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]">
@@ -88,7 +86,6 @@ export function SystemPillars() {
                         {pillar.description}
                       </p>
                     </div>
-
                   </article>
                 </div>
               </Reveal>

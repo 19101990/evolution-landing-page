@@ -16,7 +16,7 @@ export function FinalCta() {
           alt={finalCta.backgroundImage.alt}
           fill
           sizes="100vw"
-          className="object-cover object-[center_top] sm:object-center opacity-80"
+          className="object-cover object-[right_bottom] sm:object-center !h-[60%] sm:!h-full opacity-100 sm:opacity-80"
         />
 
         <div className="absolute inset-0 bg-[#050A10]/35" />
@@ -38,7 +38,7 @@ export function FinalCta() {
                   className="w-8 h-8 sm:w-10 sm:h-10 text-cyan-400 shrink-0 fill-current drop-shadow-[0_0_15px_rgba(34,211,238,0.5)] select-none"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.322 1.49-4.225 3.325-4.425 4.96.488-.239 1.054-.361 1.638-.361 2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-.543 0-1.077-.109-1.553-.479zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.322 1.49-4.225 3.325-4.425 4.96.488-.239 1.054-.361 1.638-.361 2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-.543 0-1.077-.109-1.553-.479z" />
+                  <path d="M4.5 4h5A1.5 1.5 0 0 1 11 5.5v5A1.5 1.5 0 0 1 9.5 12H7.2l1.6 6.2a.8.8 0 0 1-.77 1h-1.8a.8.8 0 0 1-.77-.6L3.1 11.4A1.5 1.5 0 0 1 3 10.5v-5A1.5 1.5 0 0 1 4.5 4zm10 0h5A1.5 1.5 0 0 1 21 5.5v5a1.5 1.5 0 0 1-1.5 1.5h-2.3l1.6 6.2a.8.8 0 0 1-.77 1h-1.8a.8.8 0 0 1-.77-.6l-2.36-7.2A1.5 1.5 0 0 1 13 10.5v-5A1.5 1.5 0 0 1 14.5 4z" />
                 </svg>
 
                 <div className="space-y-1.5 max-w-lg lg:pr-[60px]">

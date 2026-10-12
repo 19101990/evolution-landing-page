@@ -13,14 +13,11 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-[#050A10]/90 backdrop-blur-md border-b border-slate-800/80">
       <Container className="h-20 flex items-center justify-between">
-        
-        {/* Brand Logo */}
         <a href="#" className="font-extrabold text-sm sm:text-base tracking-wider uppercase leading-tight font-display">
           <span className="text-slate-100">{logo.first}</span>{" "}
           <span className="block text-cyan-400">{logo.second}</span>
         </a>
 
-        {/* Desktop Anchor Links */}
         <nav className="hidden md:flex items-center gap-8 font-mono text-xs text-slate-400">
           {links.map((link) => (
             <a
@@ -33,14 +30,12 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* Desktop CTA */}
         <div className="hidden md:block">
           <Button href="#" className="px-5 py-2.5 font-display font-bold">
             {ctaButton}
           </Button>
         </div>
 
-        {/* Mobile Hamburger Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="md:hidden text-slate-400 hover:text-slate-100 p-2"
@@ -50,16 +45,15 @@ export function Navbar() {
         </button>
       </Container>
 
-      {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#070D14] border-b border-slate-800 px-6 py-6 space-y-4">
+        <div className="absolute top-full inset-x-0 md:hidden bg-[#070D14]/95 backdrop-blur-xl border-b border-slate-800/90 shadow-[0_20px_40px_rgba(0,0,0,0.7)] px-6 py-6 space-y-4">
           <nav className="flex flex-col gap-4 font-mono text-sm text-slate-300">
             {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-cyan-400"
+                className="hover:text-cyan-400 transition-colors"
               >
                 {link.label}
               </a>
@@ -67,7 +61,7 @@ export function Navbar() {
           </nav>
           <div className="pt-2">
             <Button
-              href="#" //"/Zaprogramuj swoją ewolucję - Igor Kiełbowski.pdf"
+              href="#"
               className="w-full py-3 font-display font-bold"
             >
               {ctaButton}

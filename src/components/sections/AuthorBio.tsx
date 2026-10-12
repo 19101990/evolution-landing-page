@@ -2,6 +2,8 @@ import Image from "next/image";
 import { SITE_CONTENT } from "@/data/content";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
+import { CyberGrid } from "@/components/ui/CyberGrid";
+import { BackgroundGlow } from "@/components/ui/BackgroundGlow";
 
 export function AuthorBio() {
   const { authorSection } = SITE_CONTENT;
@@ -9,16 +11,13 @@ export function AuthorBio() {
   return (
     <section
       id={authorSection.id}
-      className="relative py-14 md:py-24 bg-[#050A10] overflow-hidden"
+      className="relative py-16 md:py-28 bg-[#050A10] overflow-hidden"
     >
-      <div
-        aria-hidden="true"
-        className="absolute top-1/2 left-10 -translate-y-1/2 w-[450px] h-[450px] bg-cyan-500/5 rounded-full blur-[140px] pointer-events-none -z-10"
-      />
+      <CyberGrid />
+      <BackgroundGlow />
 
       <Container className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          
           <div className="lg:col-span-5 relative flex justify-center lg:justify-start">
             <Reveal
               direction="right"
@@ -49,7 +48,6 @@ export function AuthorBio() {
           </div>
 
           <div className="lg:col-span-7 flex flex-col items-start text-left">
-            
             <Reveal
               direction="left"
               delay={0.1}
@@ -76,15 +74,11 @@ export function AuthorBio() {
             >
               <div className="space-y-4 text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl font-sans">
                 {authorSection.bio.map((paragraph, index) => (
-                  <p key={index}>
-                    {paragraph}
-                  </p>
+                  <p key={index}>{paragraph}</p>
                 ))}
               </div>
             </Reveal>
-
           </div>
-
         </div>
       </Container>
     </section>

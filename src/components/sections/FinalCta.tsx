@@ -76,7 +76,7 @@ export function FinalCta() {
 
               <Button
                 href={finalCta.cta.fileUrl}
-                download
+                download="Zaprogramuj swoją ewolucję - Igor Kiełbowski.pdf"
                 className="w-full sm:w-auto px-4 py-4 text-xs sm:text-sm font-bold font-display tracking-wider shadow-lg shadow-[#FF6B00]/25 hover:shadow-[#FF6B00]/45 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
               >
                 <Download className="w-4 h-4 mr-2 stroke-[2.5]" />

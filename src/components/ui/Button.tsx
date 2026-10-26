@@ -5,12 +5,12 @@ interface ButtonProps {
     href?: string;
     variant?: "primary" | "outline";
     className?: string;
-    download?: boolean;
+    download?: boolean | string;
 }
 
 export function Button({
     children,
-    href = "/Zaprogramuj swoją ewolucję - Igor Kiełbowski.pdf",
+    href = "/zaprogramuj-swoja-ewolucje-igor-kielbowski.pdf",
     variant = "primary",
     className = "",
     download = true,

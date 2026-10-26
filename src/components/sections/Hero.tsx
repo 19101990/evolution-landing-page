@@ -73,7 +73,7 @@ export function Hero() {
               <div className="w-full sm:w-auto">
                 <Button
                   href={finalCta.cta.fileUrl}
-                  download
+                  download="Zaprogramuj swoją ewolucję - Igor Kiełbowski.pdf"
                   className="w-full sm:w-auto px-4 py-4 text-xs sm:text-sm font-bold font-display tracking-wider shadow-lg shadow-[#FF6B00]/20 hover:shadow-[#FF6B00]/40 transition-shadow duration-300"
                 >
                   <Download className="w-4 h-4 mr-1 stroke-[2.5]" />

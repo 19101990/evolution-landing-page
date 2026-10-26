@@ -31,7 +31,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <Button href="#" className="px-5 py-2.5 font-display font-bold">
+          <Button href={SITE_CONTENT.navigation.fileUrl} download="Zaprogramuj swoją ewolucję - Igor Kiełbowski.pdf" className="px-5 py-2.5 font-display font-bold">
             {ctaButton}
           </Button>
         </div>

@@ -10,7 +10,7 @@ export function Hero() {
   const { hero, supportSection, finalCta } = SITE_CONTENT;
 
   return (
-    <section id="book" className="relative pt-10 pb-10 md:pt-20 md:pb-12 overflow-hidden bg-[#050A10]">
+    <section id="book" aria-labelledby="hero-title" className="relative pt-10 pb-10 md:pt-20 md:pb-12 overflow-hidden bg-[#050A10]">
       <div className="absolute inset-0 z-[1] select-none pointer-events-none">
         <Image
           src={hero.backgroundImage.src}
@@ -44,7 +44,7 @@ export function Hero() {
             </Reveal>
 
             <Reveal direction="up" delay={0.15} duration={1.4}>
-              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight leading-[1.05] text-white mb-6">
+              <h1 id="hero-title" className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight leading-[1.05] text-white mb-6">
                 {hero.title.line1} <br />
                 {hero.title.line2}{" "}
                 <span className="text-[#FF6B00] drop-shadow-[0_0_25px_rgba(255,107,0,0.35)]">

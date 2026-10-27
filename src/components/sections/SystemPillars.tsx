@@ -10,6 +10,7 @@ export function SystemPillars() {
   return (
     <section
       id={pillarsSection.id}
+      aria-labelledby="pillars-title"
       className="relative pt-12 md:pt-16 pb-5 bg-[#050A10] overflow-hidden"
     >
       <div
@@ -24,7 +25,7 @@ export function SystemPillars() {
             margin="0px 0px -180px 0px"
             delay={0}
           >
-            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-tight text-white mb-2">
+            <h2 id="pillars-title" className="font-display text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-tight text-white mb-2">
               {pillarsSection.title.regular}{" "}
               <span className="text-cyan-400 drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
                 {pillarsSection.title.highlight}

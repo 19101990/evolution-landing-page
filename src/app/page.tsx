@@ -8,14 +8,23 @@ import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#050A10] text-slate-100">
+    <>
+      <a className="sr-only focus:not-sr-only" href="#main-content">
+        Przejdź do treści głównej
+      </a>
       <Navbar />
-      <Hero />
-      <SystemPillars />
-      <AuthorBio />
-      <SupportSection />
-      <FinalCta />
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className="min-h-screen bg-[#050A10] text-slate-100"
+      >
+        <Hero />
+        <SystemPillars />
+        <AuthorBio />
+        <SupportSection />
+        <FinalCta />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

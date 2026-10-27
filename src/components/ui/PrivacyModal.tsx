@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect } from "react";
 import { X } from "lucide-react";
 import { SITE_CONTENT } from "@/data/content";
+import { useModalAccessibility } from "@/hooks/useModalAccessibility";
 
 interface PrivacyModalProps {
   isOpen: boolean;
@@ -11,22 +11,7 @@ interface PrivacyModalProps {
 
 export function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
   const { privacyPolicy } = SITE_CONTENT;
-
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      document.body.style.overflow = "unset";
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [isOpen, onClose]);
+  const dialogRef = useModalAccessibility(isOpen, onClose);
 
   if (!isOpen) return null;
 
@@ -35,6 +20,8 @@ export function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
       role="dialog"
       aria-modal="true"
       aria-labelledby="privacy-modal-title"
+      tabIndex={-1}
+      ref={dialogRef}
       className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6"
     >
       <div
@@ -59,15 +46,20 @@ export function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
           </div>
 
           <button
+            type="button"
             onClick={onClose}
-            aria-label="Zamknij okno"
+            aria-label="Zamknij okno polityki prywatności"
             className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 transition-colors"
           >
             <X className="w-5 h-5 stroke-[2]" />
           </button>
         </div>
 
-        <div className="flex-1 overflow-y-auto px-6 py-6 space-y-6 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div
+          tabIndex={0}
+          aria-label="Treść polityki prywatności"
+          className="flex-1 overflow-y-auto px-6 py-6 space-y-6 text-xs sm:text-sm text-slate-300 leading-relaxed"
+        >
           {privacyPolicy.sections.map((section, idx) => (
             <div key={idx} className="space-y-1.5">
               <h3 className="font-semibold text-white tracking-wide">
@@ -82,6 +74,7 @@ export function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
 
         <div className="px-6 py-4 border-t border-slate-800/80 bg-[#050A10]/60 flex justify-end">
           <button
+            type="button"
             onClick={onClose}
             className="px-5 py-2 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-200 text-xs font-semibold tracking-wider transition-colors"
           >

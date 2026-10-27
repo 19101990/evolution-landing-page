@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { SITE_CONTENT } from "@/data/content";
 import { Button } from "@/components/ui/Button";
 import { Menu, X } from "lucide-react";
@@ -8,7 +8,32 @@ import { Container } from "@/components/ui/Container";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const mobileMenuToggleRef = useRef<HTMLButtonElement>(null);
   const { logo, links, ctaButton } = SITE_CONTENT.navigation;
+
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+
+    const handlePointerDown = (event: PointerEvent) => {
+      const target = event.target;
+      if (!(target instanceof Node)) return;
+
+      if (
+        mobileMenuRef.current?.contains(target) ||
+        mobileMenuToggleRef.current?.contains(target)
+      ) {
+        return;
+      }
+
+      setMobileMenuOpen(false);
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+    };
+  }, [mobileMenuOpen]);
 
   return (
     <header className="sticky top-0 z-50 bg-[#050A10]/90 backdrop-blur-md border-b border-slate-800/80">
@@ -44,6 +69,7 @@ export function Navbar() {
         </div>
 
         <button
+          ref={mobileMenuToggleRef}
           type="button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="md:hidden text-slate-400 hover:text-slate-100 p-2"
@@ -55,11 +81,16 @@ export function Navbar() {
               : "Otwórz menu nawigacyjne"
           }
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {mobileMenuOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
         </button>
       </Container>
 
       <div
+        ref={mobileMenuRef}
         id="mobile-navigation"
         hidden={!mobileMenuOpen}
         className="absolute top-full inset-x-0 md:hidden bg-[#070D14]/95 backdrop-blur-xl border-b border-slate-800/90 shadow-[0_20px_40px_rgba(0,0,0,0.7)] px-6 py-6 space-y-4"

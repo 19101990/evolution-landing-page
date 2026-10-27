@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { X, Mail, Copy, Check, Send } from "lucide-react";
 import { SITE_CONTENT } from "@/data/content";
+import { useModalAccessibility } from "@/hooks/useModalAccessibility";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -12,22 +13,7 @@ interface ContactModalProps {
 export function ContactModal({ isOpen, onClose }: ContactModalProps) {
   const { contactModal } = SITE_CONTENT;
   const [copied, setCopied] = useState(false);
-
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      document.body.style.overflow = "unset";
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [isOpen, onClose]);
+  const dialogRef = useModalAccessibility(isOpen, onClose);
 
   const handleCopy = async () => {
     try {
@@ -46,6 +32,9 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
       role="dialog"
       aria-modal="true"
       aria-labelledby="contact-modal-title"
+      aria-describedby="contact-modal-intro"
+      tabIndex={-1}
+      ref={dialogRef}
       className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6"
     >
       <div
@@ -73,6 +62,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           </h2>
 
           <button
+            type="button"
             onClick={onClose}
             aria-label="Zamknij okno kontaktu"
             className="p-2 -mr-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800/60 transition-colors"
@@ -83,7 +73,10 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
         <div className="px-6 sm:px-8 py-6 space-y-6 relative z-10">
           
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p
+            id="contact-modal-intro"
+            className="text-xs sm:text-sm text-slate-300 leading-relaxed"
+          >
             {contactModal.intro}
           </p>
 
@@ -104,7 +97,10 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             </div>
 
             <button
+              type="button"
               onClick={handleCopy}
+              aria-live="polite"
+              aria-atomic="true"
               className="hidden sm:inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-[#0E1A29] border border-cyan-500/40 hover:bg-cyan-500/10 hover:border-cyan-400 text-cyan-400 text-xs font-bold font-mono tracking-wider transition-all shrink-0 cursor-pointer"
             >
               {copied ? (
@@ -145,6 +141,8 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
               >
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center text-slate-400 group-hover:text-cyan-400 group-hover:scale-110 transition-all duration-300">
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     className="w-8 h-8 fill-none stroke-current stroke-[1.8]"
                     viewBox="0 0 24 24"
                     strokeLinecap="round"
@@ -172,6 +170,8 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
               >
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center text-slate-400 group-hover:text-cyan-400 group-hover:scale-110 transition-all duration-300">
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     className="w-8 h-8 fill-none stroke-current stroke-[1.8]"
                     viewBox="0 0 24 24"
                     strokeLinecap="round"

@@ -39,5 +39,5 @@ export function Button({
     )
   }
 
-  return <button className={combinedStyles}>{children}</button>
+  return <button type="button" className={combinedStyles}>{children}</button>
 }

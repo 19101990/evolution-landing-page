@@ -9,11 +9,11 @@ export function FinalCta() {
   const { finalCta } = SITE_CONTENT;
 
   return (
-    <section className="relative mt-10 md:mt-12 py-14 sm:py-16 md:py-20 overflow-hidden bg-[#050A10]">
+    <section aria-labelledby="final-cta-title" className="relative mt-10 md:mt-12 py-14 sm:py-16 md:py-20 overflow-hidden bg-[#050A10]">
       <div className="absolute inset-0 z-0 pointer-events-none select-none">
         <Image
           src={finalCta.backgroundImage.src}
-          alt={finalCta.backgroundImage.alt}
+          alt=""
           fill
           sizes="100vw"
           className="object-cover object-[right_bottom] sm:object-center !h-[60%] sm:!h-full opacity-100 sm:opacity-80"
@@ -61,7 +61,7 @@ export function FinalCta() {
               margin="0px 0px -70px 0px"
               className="flex flex-col items-center w-full"
             >
-              <h2 className="font-display text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight mb-1">
+              <h2 id="final-cta-title" className="font-display text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight mb-1">
                 <span className="text-cyan-400 drop-shadow-[0_0_20px_rgba(34,211,238,0.45)]">
                   {finalCta.title.regular}{" "}
                 </span>

@@ -38,12 +38,19 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-[#050A10]/90 backdrop-blur-md border-b border-slate-800/80">
       <Container className="h-20 flex items-center justify-between">
-        <a href="#" className="font-extrabold text-sm sm:text-base tracking-wider uppercase leading-tight font-display">
+        <a
+          href="#book"
+          aria-label={`${logo.first} ${logo.second}`}
+          className="font-extrabold text-sm sm:text-base tracking-wider uppercase leading-tight font-display"
+        >
           <span className="text-slate-100">{logo.first}</span>{" "}
           <span className="block text-cyan-400">{logo.second}</span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8 font-mono text-xs text-slate-400">
+        <nav
+          aria-label="Nawigacja główna"
+          className="hidden md:flex items-center gap-8 font-mono text-xs text-slate-400"
+        >
           {links.map((link) => (
             <a
               key={link.href}
@@ -63,41 +70,56 @@ export function Navbar() {
 
         <button
           ref={mobileMenuToggleRef}
+          type="button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="md:hidden text-slate-400 hover:text-slate-100 p-2"
-          aria-label="Toggle navigation"
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-navigation"
+          aria-label={
+            mobileMenuOpen
+              ? "Zamknij menu nawigacyjne"
+              : "Otwórz menu nawigacyjne"
+          }
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {mobileMenuOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
         </button>
       </Container>
 
-      {mobileMenuOpen && (
-        <div
-          ref={mobileMenuRef}
-          className="absolute top-full inset-x-0 md:hidden bg-[#070D14]/95 backdrop-blur-xl border-b border-slate-800/90 shadow-[0_20px_40px_rgba(0,0,0,0.7)] px-6 py-6 space-y-4"
+      <div
+        ref={mobileMenuRef}
+        id="mobile-navigation"
+        hidden={!mobileMenuOpen}
+        className="absolute top-full inset-x-0 md:hidden bg-[#070D14]/95 backdrop-blur-xl border-b border-slate-800/90 shadow-[0_20px_40px_rgba(0,0,0,0.7)] px-6 py-6 space-y-4"
+      >
+        <nav
+          aria-label="Nawigacja mobilna"
+          className="flex flex-col gap-4 font-mono text-sm text-slate-300"
         >
-          <nav className="flex flex-col gap-4 font-mono text-sm text-slate-300">
-            {links.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-cyan-400 transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-          <div className="pt-2">
-            <Button
-              href="#"
-              className="w-full py-3 font-display font-bold"
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMobileMenuOpen(false)}
+              className="hover:text-cyan-400 transition-colors"
             >
-              {ctaButton}
-            </Button>
-          </div>
+              {link.label}
+            </a>
+          ))}
+        </nav>
+        <div className="pt-2">
+          <Button
+            href={SITE_CONTENT.navigation.fileUrl}
+            download="Zaprogramuj swoją ewolucję - Igor Kiełbowski.pdf"
+            className="w-full py-3 font-display font-bold"
+          >
+            {ctaButton}
+          </Button>
         </div>
-      )}
+      </div>
     </header>
   );
 }

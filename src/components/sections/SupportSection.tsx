@@ -10,6 +10,7 @@ export function SupportSection() {
   return (
     <section
       id={supportSection.id}
+      aria-labelledby="support-title"
       className="relative pt-5 pb-0 sm:pb-10 bg-[#050A10] overflow-hidden"
     >
       <div
@@ -78,7 +79,7 @@ export function SupportSection() {
                 <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center p-2 rounded-xl bg-cyan-950/30 border border-cyan-500/20 shadow-[0_0_25px_rgba(34,211,238,0.2)]">
                   <Image
                     src={supportSection.imageSrc}
-                    alt={supportSection.imageAlt}
+                    alt=""
                     width={80}
                     height={80}
                     className="w-full h-full object-contain filter drop-shadow-[0_0_18px_rgba(34,211,238,0.6)] select-none pointer-events-none"
@@ -86,7 +87,7 @@ export function SupportSection() {
                 </div>
 
                 <div className="flex-1 min-w-0">
-                  <h2 className="font-display text-xl sm:text-2xl font-black uppercase tracking-tight text-white mb-1.5">
+                  <h2 id="support-title" className="font-display text-xl sm:text-2xl font-black uppercase tracking-tight text-white mb-1.5">
                     {supportSection.title.regular}{" "}
                     <span className="text-cyan-400 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)]">
                       {supportSection.title.highlight}

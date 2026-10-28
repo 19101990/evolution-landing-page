@@ -153,27 +153,42 @@ export const SITE_CONTENT = {
 
   privacyPolicy: {
     title: "POLITYKA PRYWATNOŚCI",
-    lastUpdated: "Ostatnia aktualizacja: październik 2026",
+    lastUpdated: "Ostatnia aktualizacja: 28 października 2026",
     sections: [
       {
-        heading: "1. Informacje ogólne",
+        heading: "1. Administrator danych",
         content:
-          "Niniejsza strona ma charakter informacyjny i promuje bezpłatną publikację „Zaprogramuj swoją ewolucję”. Pobieranie materiałów odbywa się bezpośrednio, bez konieczności rejestracji i bez podawania jakichkolwiek danych osobowych.",
+          "Administratorem danych osobowych jest Igor Kiełbowski. W sprawach dotyczących prywatności możesz skontaktować się pod adresem igorkielbowski@gmail.com.",
       },
       {
-        heading: "2. Logi serwera i hosting",
+        heading: "2. Dane techniczne i hosting",
         content:
-          "Serwis utrzymywany jest na platformie hostingowej Vercel. Podczas korzystania ze strony zapytania sieciowe mogą być rejestrowane w standardowych logach technicznych serwera (np. adres IP, data i godzina zapytania, typ przeglądarki). Dane te służą wyłącznie celom technicznym i bezpieczeństwa.",
+          "Strona nie ma formularzy, kont ani newslettera i nie prosi o podanie danych. Przy wyświetlaniu strony dostawca hostingu Vercel może przetwarzać dane techniczne żądania, takie jak adres IP, data i godzina, odwiedzony adres oraz informacje o przeglądarce i urządzeniu. Służy to dostarczeniu strony, jej bezpieczeństwu i diagnozowaniu problemów. Podstawą jest prawnie uzasadniony interes administratora (art. 6 ust. 1 lit. f RODO). Dane techniczne są przechowywane przez okres potrzebny do tych celów, zgodnie z zasadami retencji dostawcy hostingu.",
       },
       {
-        heading: "3. Pliki cookies i analityka",
+        heading: "3. Kontakt",
         content:
-          "Strona nie wykorzystuje inwazyjnych marketingowych plików cookies ani narzędzi śledzących profile użytkowników. Wykorzystywane mogą być jedynie niezbędne mechanizmy sesyjne lub zagregowane, anonimowe statystyki ruchu.",
+          "Jeśli napiszesz na podany adres e-mail lub skontaktujesz się przez media społecznościowe, administrator otrzyma dane widoczne w Twojej wiadomości i wykorzysta je wyłącznie do odczytania i obsługi korespondencji. Podstawą jest prawnie uzasadniony interes administratora polegający na odpowiadaniu na otrzymane wiadomości (art. 6 ust. 1 lit. f RODO).",
       },
       {
-        heading: "4. Zewnętrzne odnośniki",
+        heading: "4. Pliki cookies i analityka",
         content:
-          "Odnośniki zewnętrzne (np. link do postawienia kawy lub profile społecznościowe) kierują do niezależnych platform, które posiadają własne polityki prywatności i przetwarzania danych.",
+          "Strona nie korzysta z narzędzi analitycznych ani reklamowych i — według obecnej konfiguracji — nie zapisuje plików cookies ani danych w pamięci lokalnej przeglądarki. Jeśli wybierzesz odnośnik do zewnętrznej usługi, np. BuyCoffee, Instagram lub Facebook, jej operator może stosować własne pliki cookies i przetwarzać dane zgodnie z własnymi zasadami.",
+      },
+      {
+        heading: "5. Odbiorcy i zewnętrzne usługi",
+        content:
+          "Dane techniczne mogą być przetwarzane przez Vercel jako dostawcę hostingu, a wiadomości e-mail przez dostawcę poczty administratora. Odnośniki do BuyCoffee, Instagramu i Facebooka prowadzą do niezależnych usług; po ich otwarciu dane są przetwarzane przez ich operatorów zgodnie z ich politykami prywatności. Strona nie osadza tych usług.",
+      },
+      {
+        heading: "6. Przekazywanie danych poza EOG",
+        content:
+          "Dostawca hostingu może przetwarzać dane poza Europejskim Obszarem Gospodarczym. Jeśli do tego dochodzi, przekazanie odbywa się z zastosowaniem mechanizmów i zabezpieczeń opisanych w dokumentacji Vercel dotyczącej ochrony danych.",
+      },
+      {
+        heading: "7. Twoje prawa",
+        content:
+          "W zakresie przewidzianym przez RODO możesz żądać dostępu do swoich danych, ich sprostowania, usunięcia lub ograniczenia przetwarzania, a także wnieść sprzeciw wobec przetwarzania opartego na prawnie uzasadnionym interesie. Możesz również złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych. W sprawie realizacji praw skontaktuj się z administratorem pod adresem e-mail wskazanym w tej polityce. Kontakt i podanie danych w wiadomości są dobrowolne.",
       },
     ],
   },

@@ -58,7 +58,7 @@ export function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
         <div
           tabIndex={0}
           aria-label="Treść polityki prywatności"
-          className="flex-1 overflow-y-auto px-6 py-6 space-y-6 text-xs sm:text-sm text-slate-300 leading-relaxed"
+          className="privacy-scrollbar flex-1 overflow-y-auto px-6 py-6 space-y-6 text-xs sm:text-sm text-slate-300 leading-relaxed"
         >
           {privacyPolicy.sections.map((section, idx) => (
             <div key={idx} className="space-y-1.5">

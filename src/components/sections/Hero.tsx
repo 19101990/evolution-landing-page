@@ -37,13 +37,13 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
           <div className="lg:col-span-7 flex flex-col items-start text-left order-2 lg:order-1">
-            <Reveal direction="up" delay={0.05} duration={1.4}>
+            <Reveal direction="up" delay={0.05} duration={1.4} margin="0px 0px 180px 0px">
               <span className="font-mono text-xs uppercase tracking-widest text-cyan-400 font-semibold mb-3 block">
                 {hero.authorEyebrow}
               </span>
             </Reveal>
 
-            <Reveal direction="up" delay={0.15} duration={1.4}>
+            <Reveal direction="up" delay={0.15} duration={1.4} margin="0px 0px 180px 0px">
               <h1 id="hero-title" className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight leading-[1.05] text-white mb-6">
                 {hero.title.line1} <br />
                 {hero.title.line2}{" "}
@@ -53,7 +53,7 @@ export function Hero() {
               </h1>
             </Reveal>
 
-            <Reveal direction="up" delay={0.25} duration={1.4}>
+            <Reveal direction="up" delay={0.25} duration={1.4} margin="0px 0px 180px 0px">
               <div className="font-mono text-sm sm:text-base text-slate-200 space-y-1 mb-6 border-l-2 border-cyan-500/60 pl-4 py-0.5">
                 {hero.tagline.map((line, index) => (
                   <p key={index} className="font-semibold">
@@ -63,13 +63,13 @@ export function Hero() {
               </div>
             </Reveal>
 
-            <Reveal direction="up" delay={0.35} duration={1.4}>
+            <Reveal direction="up" delay={0.35} duration={1.4} margin="0px 0px 180px 0px">
               <p className="text-white text-sm sm:text-base leading-relaxed max-w-xl mb-8 font-sans">
                 {hero.description}
               </p>
             </Reveal>
 
-            <Reveal direction="up" delay={0.45} duration={1.4}>
+            <Reveal direction="up" delay={0.45} duration={1.4} margin="0px 0px 180px 0px">
               <div className="w-full sm:w-auto">
                 <Button
                   href={finalCta.cta.fileUrl}

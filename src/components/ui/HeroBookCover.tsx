@@ -10,7 +10,7 @@ interface HeroBookCoverProps {
 
 export function HeroBookCover({ src, alt }: HeroBookCoverProps) {
   return (
-    <div className="relative w-full max-w-[220px] sm:max-w-[340px] lg:max-w-none flex items-center justify-center mx-auto">
+    <div className="relative w-full max-w-[300px] sm:max-w-[340px] lg:max-w-none flex items-center justify-start lg:justify-center">
       
       <motion.div
         aria-hidden="true"
@@ -44,15 +44,15 @@ export function HeroBookCover({ src, alt }: HeroBookCoverProps) {
         aria-hidden="true"
         className="absolute -inset-2 bg-gradient-to-tr from-cyan-500/25 via-transparent to-[#FF6B00]/25 rounded-3xl blur-2xl pointer-events-none"
       />
-      <div className="relative z-10 w-full flex justify-center">
+      <div className="relative z-10 w-full flex justify-start lg:justify-center">
         <Image
           src={src}
           alt={alt}
           width={520}
           height={720}
           priority
-          sizes="(max-width: 640px) 220px, (max-width: 1024px) 340px, 40vw"
-          className="w-auto h-auto max-h-[300px] sm:max-h-[440px] lg:max-h-[580px] object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.95)] select-none pointer-events-none"
+          sizes="(max-width: 640px) 300px, (max-width: 1024px) 340px, 40vw"
+          className="w-auto h-auto max-h-[400px] sm:max-h-[440px] lg:max-h-[580px] object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.95)] select-none pointer-events-none"
         />
       </div>
 

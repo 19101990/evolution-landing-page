@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Oxanium } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -45,6 +46,7 @@ export default function RootLayout({
         className={`${inter.variable} ${oxanium.variable} bg-[#050A10] text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-black`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

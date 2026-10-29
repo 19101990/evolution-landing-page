@@ -153,7 +153,7 @@ export const SITE_CONTENT = {
 
   privacyPolicy: {
     title: "POLITYKA PRYWATNOŚCI",
-    lastUpdated: "Ostatnia aktualizacja: 28 października 2026",
+    lastUpdated: "Ostatnia aktualizacja: 29 października 2026",
     sections: [
       {
         heading: "1. Administrator danych",
@@ -163,7 +163,7 @@ export const SITE_CONTENT = {
       {
         heading: "2. Dane techniczne i hosting",
         content:
-          "Strona nie ma formularzy, kont ani newslettera i nie prosi o podanie danych. Przy wyświetlaniu strony dostawca hostingu Vercel może przetwarzać dane techniczne żądania, takie jak adres IP, data i godzina, odwiedzony adres oraz informacje o przeglądarce i urządzeniu. Służy to dostarczeniu strony, jej bezpieczeństwu i diagnozowaniu problemów. Podstawą jest prawnie uzasadniony interes administratora (art. 6 ust. 1 lit. f RODO). Dane techniczne są przechowywane przez okres potrzebny do tych celów, zgodnie z zasadami retencji dostawcy hostingu.",
+          "Strona nie ma formularzy, kont ani newslettera i nie prosi o podanie danych. Przy wyświetlaniu strony dostawca hostingu Vercel może przetwarzać dane techniczne żądania, takie jak adres IP, data i godzina, odwiedzony adres oraz informacje o przeglądarce i urządzeniu. Służy to dostarczeniu strony, jej bezpieczeństwu i diagnozowaniu problemów. Podstawą jest prawnie uzasadniony interes administratora (art. 6 ust. 1 lit. f RODO). Dane techniczne są przechowywane przez okres potrzebny do tych celów, zgodnie z zasadami retencji dostawcy hostingu. Vercel przetwarza również dane w ramach analityki opisanej w punkcie 4.",
       },
       {
         heading: "3. Kontakt",
@@ -173,17 +173,17 @@ export const SITE_CONTENT = {
       {
         heading: "4. Pliki cookies i analityka",
         content:
-          "Strona nie korzysta z narzędzi analitycznych ani reklamowych i — według obecnej konfiguracji — nie zapisuje plików cookies ani danych w pamięci lokalnej przeglądarki. Jeśli wybierzesz odnośnik do zewnętrznej usługi, np. BuyCoffee, Instagram lub Facebook, jej operator może stosować własne pliki cookies i przetwarzać dane zgodnie z własnymi zasadami.",
+          "Strona korzysta z Vercel Web Analytics, aby mierzyć zagregowany ruch i odsłony. Narzędzie może rejestrować odwiedzane adresy lub ścieżki, datę i godzinę, stronę odsyłającą, przybliżoną lokalizację oraz typ urządzenia, system operacyjny i przeglądarkę. Według Vercel analityka nie używa plików cookies stron trzecich; do rozróżniania wizyt wykorzystuje skrót tworzony na podstawie żądania, a sesja takiego odwiedzającego jest usuwana po 24 godzinach. Dane służą statystyce korzystania ze strony, nie reklamie. Vercel opisuje wyniki jako zagregowane i niepowiązane z adresem IP ani profilem użytkownika w innych witrynach. Podstawą przetwarzania jest prawnie uzasadniony interes administratora polegający na poznaniu popularności strony i jej ulepszaniu (art. 6 ust. 1 lit. f RODO). Strona nie zapisuje własnych plików cookies ani danych w pamięci lokalnej przeglądarki. Jeśli wybierzesz odnośnik do zewnętrznej usługi, np. BuyCoffee, Instagram lub Facebook, jej operator może stosować własne pliki cookies i przetwarzać dane zgodnie z własnymi zasadami.",
       },
       {
         heading: "5. Odbiorcy i zewnętrzne usługi",
         content:
-          "Dane techniczne mogą być przetwarzane przez Vercel jako dostawcę hostingu, a wiadomości e-mail przez dostawcę poczty administratora. Odnośniki do BuyCoffee, Instagramu i Facebooka prowadzą do niezależnych usług; po ich otwarciu dane są przetwarzane przez ich operatorów zgodnie z ich politykami prywatności. Strona nie osadza tych usług.",
+          "Dane techniczne i analityczne mogą być przetwarzane przez Vercel jako dostawcę hostingu i Vercel Web Analytics, a wiadomości e-mail przez dostawcę poczty administratora. Odnośniki do BuyCoffee, Instagramu i Facebooka prowadzą do niezależnych usług; po ich otwarciu dane są przetwarzane przez ich operatorów zgodnie z ich politykami prywatności. Strona nie osadza tych usług.",
       },
       {
         heading: "6. Przekazywanie danych poza EOG",
         content:
-          "Dostawca hostingu może przetwarzać dane poza Europejskim Obszarem Gospodarczym. Jeśli do tego dochodzi, przekazanie odbywa się z zastosowaniem mechanizmów i zabezpieczeń opisanych w dokumentacji Vercel dotyczącej ochrony danych.",
+          "Vercel może przetwarzać dane techniczne i analityczne poza Europejskim Obszarem Gospodarczym. Jeśli do tego dochodzi, przekazanie odbywa się z zastosowaniem mechanizmów i zabezpieczeń opisanych w dokumentacji Vercel dotyczącej ochrony danych.",
       },
       {
         heading: "7. Twoje prawa",

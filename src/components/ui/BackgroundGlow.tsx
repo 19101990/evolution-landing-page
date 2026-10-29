@@ -34,8 +34,8 @@ export function BackgroundGlow({
         <div
           className={`${
             leftColor === "cyan"
-              ? "glow-cyan-pulse bg-cyan-500/20"
-              : "glow-orange-pulse bg-[#FF6B00]/18"
+              ? "glow-cyan-pulse bg-cyan-500/25"
+              : "glow-orange-pulse bg-[#FF6B00]/24"
           } w-[340px] sm:w-[440px] md:w-[520px] h-[340px] sm:h-[440px] md:h-[520px] rounded-full blur-[100px] md:blur-[140px]`}
         />
       </div>
@@ -49,8 +49,8 @@ export function BackgroundGlow({
           <div
             className={`${
               rightColor === "orange"
-                ? "glow-orange-pulse bg-[#FF6B00]/18"
-                : "glow-cyan-pulse bg-cyan-500/20"
+                ? "glow-orange-pulse bg-[#FF6B00]/24"
+                : "glow-cyan-pulse bg-cyan-500/25"
             } w-[540px] h-[540px] rounded-full blur-[150px]`}
           />
         </div>
@@ -58,19 +58,19 @@ export function BackgroundGlow({
 
       <style>{`
         .glow-cyan-pulse {
-          animation: ambientPulseCyan 1.5s ease-in-out infinite alternate;
+          animation: ambientPulseCyan 2.2s ease-in-out infinite alternate;
           will-change: transform, opacity;
         }
 
         .glow-orange-pulse {
-          animation: ambientPulseOrange 2.2s ease-in-out infinite alternate;
+          animation: ambientPulseOrange 2.2s ease-in-out infinite alternate-reverse;
           will-change: transform, opacity;
         }
 
         @keyframes ambientPulseCyan {
           0% {
             transform: scale(0.92);
-            opacity: 0.65;
+            opacity: 0.45;
           }
           100% {
             transform: scale(1.08);
@@ -81,7 +81,7 @@ export function BackgroundGlow({
         @keyframes ambientPulseOrange {
           0% {
             transform: scale(0.94);
-            opacity: 0.8;
+            opacity: 0.55;
           }
           100% {
             transform: scale(1.1);

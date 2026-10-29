@@ -26,11 +26,11 @@ export function Hero() {
 
       <div
         aria-hidden="true"
-        className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none"
+        className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-cyan-500/15 rounded-full blur-[140px] pointer-events-none"
       />
       <div
         aria-hidden="true"
-        className="absolute top-1/3 right-4 w-[360px] h-[360px] bg-[#FF6B00]/10 rounded-full blur-[130px] pointer-events-none"
+        className="absolute top-1/3 right-4 w-[360px] h-[360px] bg-[#FF6B00]/15 rounded-full blur-[130px] pointer-events-none"
       />
 
       <Container className="relative z-10">

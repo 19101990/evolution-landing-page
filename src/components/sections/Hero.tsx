@@ -99,8 +99,8 @@ export function Hero() {
             </Reveal>
           </div>
 
-          <div className="lg:col-span-5 flex justify-center items-center relative order-1 lg:order-2 w-full">
-            <Reveal direction="up" delay={0.2} duration={1.4} className="w-full flex justify-center">
+          <div className="lg:col-span-5 flex justify-start lg:justify-center items-start lg:items-center relative order-1 lg:order-2 w-full mb-4 lg:mb-0">
+            <Reveal direction="up" delay={0.2} duration={1.4} className="w-full flex justify-start lg:justify-center">
               <HeroBookCover
                 src={hero.bookCover.src}
                 alt={hero.bookCover.alt}

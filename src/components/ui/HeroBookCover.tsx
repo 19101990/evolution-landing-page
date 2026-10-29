@@ -16,7 +16,7 @@ export function HeroBookCover({ src, alt }: HeroBookCoverProps) {
         aria-hidden="true"
         className="absolute -left-10 sm:-left-16 top-1/4 w-52 sm:w-72 h-64 sm:h-88 bg-cyan-400/45 rounded-full blur-[70px] sm:blur-[85px] pointer-events-none"
         animate={{
-          opacity: [0.5, 0.85, 0.5],
+          opacity: [0.35, 1, 0.35],
           scale: [0.95, 1.08, 0.95],
         }}
         transition={{
@@ -30,7 +30,7 @@ export function HeroBookCover({ src, alt }: HeroBookCoverProps) {
         aria-hidden="true"
         className="absolute -right-8 sm:-right-14 bottom-1/4 w-48 sm:w-68 h-60 sm:h-80 bg-[#FF6B00]/45 rounded-full blur-[65px] sm:blur-[80px] pointer-events-none"
         animate={{
-          opacity: [0.6, 0.95, 0.6],
+          opacity: [1, 0.45, 1],
           scale: [1.08, 0.95, 1.08],
         }}
         transition={{

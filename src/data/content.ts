@@ -40,7 +40,7 @@ export const SITE_CONTENT = {
     },
     bookCover: {
       alt: "Okładka książki Zaprogramuj Swoją Ewolucję - Igor Kiełbowski",
-      src: "/images/hero_book.webp",
+      src: "/images/hero_book_transparent.webp",
     },
   },
 
